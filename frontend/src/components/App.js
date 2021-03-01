@@ -11,6 +11,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import ConnectCard from './ConnectCard';
 import DeployCard from './DeployCard';
 import MaterialCard from './MaterialCard';
+import ReloadCard from './ReloadCard';
 import ThemeCard from './ThemeCard';
 import UploadCard from './UploadCard';
 
@@ -113,7 +114,16 @@ function App() {
               Replace this with your logo:
             </Typography>
             <Typography variant="caption">
-              <code>'/frontend/src/assets/images/logo.png'</code>{' '}
+              <code>
+                <Link
+                  className={classes.link}
+                  href={`${process.env.REACT_APP_STARTER_REPO_URL}frontend/src/assets/images/logo.png`}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  frontend/src/assets/images/logo.png
+                </Link>
+              </code>{' '}
             </Typography>
           </Box>
           <Box mt={-2}>
@@ -163,6 +173,9 @@ function App() {
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <MaterialCard classes={classes} />
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={4}>
+            <ReloadCard classes={classes} />
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4}>
             <ConnectCard classes={classes} />
