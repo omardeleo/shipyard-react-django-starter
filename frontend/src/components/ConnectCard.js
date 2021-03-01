@@ -102,6 +102,7 @@ function ConnectCard(props) {
               className={classes.link}
               href={`${process.env.REACT_APP_STARTER_REPO_URL}backend/src/counters/views.py#L10-L14`}
               target="_blank"
+              rel="noopener"
             >
               backend/src/counters/views.py
             </Link>
