@@ -35,6 +35,7 @@ function MaterialCard(props) {
             className={classes.link}
             href={`${process.env.REACT_APP_STARTER_REPO_URL}frontend/src/components/MaterialCard.js#L27-L29`}
             target="_blank"
+            rel="noopener"
           >
             frontend/src/components/MaterialCard.js
           </Link>
